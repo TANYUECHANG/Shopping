@@ -1,0 +1,228 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: 谭跃昌
+  Date: 2022/5/30
+  Time: 16:45
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
+<head>
+    <title>主页面</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        /* Make the image fully responsive */
+        .carousel-inner img {
+
+            width: 40%;
+            height: 40%;
+        }
+        .carousel-inner{
+            text-align: center;
+        }
+        .daoh{
+            text-align: center;
+        }
+        .daohdiv{
+            margin-top: 10px;
+        }
+        li
+        {
+            display:inline;
+        }
+
+        li a {
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover
+        {
+            background-color: rgba(204, 204, 204, 0.151);
+            color: #000;
+            text-decoration: none;
+        }
+        div.zs{
+            position: relative;
+            left: 15%;
+            width: 80%;
+        }
+        p.description{
+            text-align: center;
+        }
+        a.individual{
+            margin-top: 10px;
+            margin-left: 20px;
+            width: 160px;
+            float: left;
+            background-color: rgb(250, 251, 252);
+        }
+        img.image{
+            width: 160px;
+            height: 160px;
+        }
+        body{
+            background-color: rgba(126, 125, 125, 0.158);
+        }
+        p.price{
+            float: left;
+        }
+        span.sales{
+            float: right;
+        }
+        div.bqian{
+            width: 160px;
+        }
+    </style>
+</head>
+<body>
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+    <!-- 指示符 -->
+    <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+
+    <!-- 轮播图片 -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="http://192.168.136.128:9002/test/images/images/OIP-C1.jpg">
+        </div>
+        <div class="carousel-item">
+            <img src="http://192.168.136.128:9002/test/images/images/3308.jpg_wh860.jpg">
+        </div>
+        <div class="carousel-item">
+            <img src="http://192.168.136.128:9002/test/images/images/OIP-C (1).jpg">
+        </div>
+    </div>
+
+    <!-- 左右切换按钮 -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </a>
+
+</div>
+<div class="daohdiv">
+    <ul class="daoh">
+        <li>
+            <a href="">爱情鲜花</a>
+        </li>
+        <li>
+            <a href="">生日鲜花</a>
+        </li>
+        <li>
+            <a href="">友情鲜花</a>
+        </li>
+        <li>
+            <a href="">探病问候</a>
+        </li>
+        <li>
+            <a href="">道歉鲜花</a>
+        </li>
+        <li>
+            <a href="">问候长辈</a>
+        </li>
+        <li>
+            <a href="">感谢老师</a>
+        </li>
+        <li>
+            <a href="">哀思鲜花</a>
+        </li>
+        <li>
+            <a href="">商务鲜花</a>
+        </li>
+    </ul>
+</div>
+<div class="zs">
+    <a class="individual" href="PurchaseServlet?id=1">
+        <div class="images"><img  class="image" src="http://192.168.136.128:9002/test/images/images/202105191204581151.jpg"></div>
+        <p class="description">永久回忆</p>
+        <div class="bqian">
+            <p class="price">￥199</p>
+            <span class="sales">销量666666笔</span>
+        </div>
+    </a>
+    <a class="individual" href="PurchaseServlet?id=2">
+        <div class="images"><img  class="image" src="http://192.168.136.128:9002/test/images/images/202104261310519646.jpg"></div>
+        <p class="description">浪漫满屋</p>
+        <div class="bqian">
+            <p class="price">￥198</p>
+            <span class="sales">销量666666笔</span>
+        </div>
+    </a>
+    <a class="individual" href="PurchaseServlet?id=3">
+        <div class="images"><img  class="image" src="http://192.168.136.128:9002/test/images/images/202104261257415133.jpg"></div>
+        <p class="description">幸福守候</p>
+        <div class="bqian">
+            <p class="price">￥197</p>
+            <span class="sales">销量666666笔</span>
+        </div>
+    </a>
+    <a class="individual" href="PurchaseServlet?id=4">
+        <div class="images"><img  class="image" src="http://192.168.136.128:9002/test/images/images/202104261208472868.jpg"></div>
+        <p class="description">相濡以沫</p>
+        <div class="bqian">
+            <p class="price">￥196</p>
+            <span class="sales">销量666666笔</span>
+        </div>
+    </a>
+    <a class="individual" href="PurchaseServlet?id=5">
+        <div class="images"><img  class="image" src="http://192.168.136.128:9002/test/images/images/202104261158351537.jpg"></div>
+        <p class="description">此生不渝</p>
+        <div class="bqian">
+            <p class="price">￥195</p>
+            <span class="sales">销量666666笔</span>
+        </div>
+    </a>
+    <a class="individual" href="PurchaseServlet?id=6">
+        <div class="images"><img  class="image" src="http://192.168.136.128:9002/test/images/images/202104260950064701.jpg"></div>
+        <p class="description">浪漫告白</p>
+        <div class="bqian">
+            <p class="price">￥194</p>
+            <span class="sales">销量666666笔</span>
+        </div>
+    </a>
+    <a class="individual" href="PurchaseServlet?id=7">
+        <div class="images"><img  class="image" src="http://192.168.136.128:9002/test/images/images/202006301617407670.jpg"></div>
+        <p class="description">为你心动</p>
+        <div class="bqian">
+            <p class="price">￥193</p>
+            <span class="sales">销量666666笔</span>
+        </div>
+    </a>
+    <a class="individual" href="PurchaseServlet?id=8">
+        <div class="images"><img  class="image" src="http://192.168.136.128:9002/test/images/images/202010260915414084.jpg"></div>
+        <p class="description">漫天繁星</p>
+        <div class="bqian">
+            <p class="price">￥192</p>
+            <span class="sales">销量666666笔</span>
+        </div>
+    </a>
+    <a class="individual" href="PurchaseServlet?id=9">
+        <div class="images"><img  class="image" src="http://192.168.136.128:9002/test/images/images/202008261130205022.jpg"></div>
+        <p class="description">不忘初心</p>
+        <div class="bqian">
+            <p class="price">￥191</p>
+            <span class="sales">销量666666笔</span>
+        </div>
+    </a>
+    <a class="individual" href="PurchaseServlet?id=10">
+        <div class="images"><img  class="image" src="http://192.168.136.128:9002/test/images/images/202007071003531298.jpg"></div>
+        <p class="description">挚爱一生</p>
+        <div class="bqian">
+            <p class="price">￥190</p>
+            <span class="sales">销量666666笔</span>
+        </div>
+    </a>
+</div>
+</body>
+</html>
